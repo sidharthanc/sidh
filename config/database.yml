@@ -36,3 +36,4 @@ production:
   database: fb_production
   username: root
   password: root
+  host: localhost
