@@ -10,7 +10,7 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   username: root
   password: root
   host: localhost
@@ -27,6 +27,7 @@ test:
   database: fb_test
 
 production:
+  <<: *default
   adapter: postgresql
   encoding: unicode
   database: fb_development
