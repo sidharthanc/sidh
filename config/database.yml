@@ -31,9 +31,12 @@
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
+pppproduction:
   adapter: postgresql
+  encoding: unicode
   database: fb_production
+  pool: 5
   username: root
-  password: root
+  password: root   ### password you have specified within psql
   host: localhost
+  port: 5432  
